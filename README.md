@@ -14,16 +14,16 @@ Neural Network: 3 main layers: Input layer, Hiden Layers, Output Layers
 
 Gradient Descent Algorithm: Calculates slope of a random point of graphed errors and moves to find the global minimum error ( best output ).
 
-2 types:
+2 types of Gradient Descent:
   - Batch Gradient Descent ( calculates using whole sample at once )
-      - Slower
-      - Optimal Solution
+      - Slower ( Has to use the entire data collection at once, creating a slower runtime )
+      - Gets an optimal solution by considering the entire dataset at once
       - Gets stuck on LOCAL minimum
   - Stochastic Gradient Descent:
-      - Goes one training sample at a time
-      - Faster
-      - Good solution not optimal
-      - Does NOT get stuck on local minimum
+      - Runs through one training sample at a time
+      - Faster ( one sample at a time requries less storage and makes computing faster )
+      - Good solution not optimal ( Can generalize due to going one sample at a time. )
+      - Does NOT get stuck on local minimum 
 
 Overfitting: When the model is trained on low effort data and conforms to only recognize that data
 Underfitting: Model is given data above its capabilities and defaults to a overgeneralization of all data
